@@ -9,7 +9,7 @@ namespace eaidyAPI.DataAccess
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=localhost; Database=eaidyDb; uid=SA; pwd=ata12151215Ata.; TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Server=localhost; Database=<DBName>; uid=SA; pwd=<Password>; TrustServerCertificate=True;");
         }
 
         public DbSet<User> Users  { get; set; }
